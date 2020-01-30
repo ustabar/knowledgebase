@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\w3wp.exe]
+"DumpCount"=dword:00000003
+"DumpFolder"="c:\\Dumps"
+"DumpType"=dword:00000002

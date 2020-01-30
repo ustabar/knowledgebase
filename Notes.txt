@@ -1,0 +1,19 @@
+0- Import-Module WebAdministration
+
+1- docker cp . <<CONTAINER_ID>>:c:\inetpub\wwwroot
+
+2- new-website -name 'mysite' -port 80 -PhysicalPath 'C:\inetpub\wwwroot\InternetBranch' -ApplicationPool '.NET v4.5'
+
+3- Set-Acl -Path 'C:\inetpub\wwwroot\InternetBranch' -AclObject (Get-Acl -Path "C:\inetpub\wwwroot\")
+
+4- install-WindowsFeature Web-Mgmt-Service
+
+5- New-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\WebManagement\Server -Name EnableRemoteManagement -Value 1 -Force
+
+6- Get-Service -Name WMSVC | Stop-Service
+
+7- Get-Service -Name WMSVC | Start-Service
+
+8- net user adminusr Deneme!1 /ADD
+
+9- net localgroup administrators adminusr /add

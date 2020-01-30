@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles/style2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <div id="masthead">
+            <div id="logo"><img src="images/ladybug.jpg" width="91" height="125"/></div>
+		    <div id="titles">
+			    <h1>Buggy Bits</h1>
+			    <h3>.NET Debugging Demos</h3>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul>
+                <li><a href="Default.htm">Home</a></li>
+                <li><a href="FeaturedProducts.aspx">Featured Products</a></li>
+                <li><a href="AllProducts.aspx">All Products</a></li>
+                <li><a href="CreateAccount.aspx">New account</a></li>
+                <li><a href="Reviews.aspx">Reviews</a></li>
+                <li><a href="News.aspx">News</a></li>
+                <li><a href="CompanyInformation.aspx">Company Info</a></li>
+                <li><a href="Links.aspx">Links</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+            </form>
+        </div>
+        <div id="footer">
+            This site was created by Tess at <a href="http://blogs.msdn.com/Tess">http://blogs.msdn.com/Tess</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+docker build -t buggybits .
+
+docker run -d -p 80:8082 --name bb buggybits
+
+$ip=docker inspect --format "{{ .NetworkSettings.Networks.nat.IPAddress }}" bb
+
+Start-Process -FilePath http://$ip
