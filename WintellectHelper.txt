@@ -1,0 +1,7 @@
+0- Get zip file from https://github.com/ustabar/knowledgebase
+1- Unzip WintellectPowerShell.zip
+2- Copy output folder under C:\Users\barisu\Documents\WindowsPowerShell\Modules
+3- Put windbg folder into path environment variables
+4- Create analysis.txt file as windbg command list
+5- run below command to start analysis
+	Get-ChildItem -Path .\ -Filter *.dmp -Recurse | Get-DumpAnalysis -DebuggingScript Analysis.txt
