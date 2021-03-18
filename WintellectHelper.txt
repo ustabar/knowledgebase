@@ -1,3 +1,8 @@
+PreRequisite:
+	Installation platform must reach the below address:
+
+	- https://msdl.microsoft.com/download/symbols
+	
 0- Get zip file from https://github.com/ustabar/knowledgebase
 1- Unzip WintellectPowerShell.zip
 2- Copy output folder under C:\Users\barisu\Documents\WindowsPowerShell\Modules
