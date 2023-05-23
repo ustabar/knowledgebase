@@ -1,6 +1,6 @@
 # escape=`
 
-FROM microsoft/iis
+FROM mcr.microsoft.com/windows/servercore:ltsc2022
 MAINTAINER Baris Usta
 SHELL ["powershell", "-command"]
 
@@ -32,3 +32,5 @@ RUN & c:\windows\system32\inetsrv\appcmd.exe `
 # Enable-WindowsOptionalFeature -Online -FeatureName IIS-RequestMonitor	  
 
 COPY site c:\inetpub\wwwroot\buggybits
+
+CMD [ "ping", "localhost", "-t" ]
