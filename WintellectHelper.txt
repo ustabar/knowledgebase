@@ -5,7 +5,7 @@ PreRequisite:
 	
 0- Get zip file from https://github.com/ustabar/knowledgebase
 1- Unzip WintellectPowerShell.zip
-2- Copy output folder under C:\Users\barisu\Documents\WindowsPowerShell\Modules
+2- Copy output folder under C:\Users\user_name\Documents\WindowsPowerShell\Modules
    - Get powershell folders using "$Env:PSModulePath" command
 3- Put windbg folder into path environment variables
 4- Create analysis.txt file as windbg command list
